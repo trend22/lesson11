@@ -30,8 +30,8 @@ const noneBtnInCircle = function (event) {
 //определение функций для управления размером круга внутри квадрата
 const changeSizeCircle = function (event) {
     let koeffCircle;
-    let h = 150;
-    let w = 150;
+    let h, w;
+    
     //делаем размер 50% для input range в положении 0.
     //уменьшение на 1 input range означает уменьшение на 1% и наоборот 
     koeffCircle  = event.target.value;
