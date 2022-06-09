@@ -32,13 +32,11 @@ const changeSizeCircle = function (event) {
     let koeffCircle;
     let h = 150;
     let w = 150;
-    //делаем размер 100% (150 px) для input range в положении 0.
-    //уменьшение на 1 input range означает уменьшение на 2% размера 150px и наоборот 
-    koeffCircle  = event.target.value * 2 * 0.005;
-    h = h * koeffCircle;
-    w = w * koeffCircle;
-    h = String(h) + 'px';
-    w = String(w) + 'px';
+    //делаем размер 50% для input range в положении 0.
+    //уменьшение на 1 input range означает уменьшение на 1% и наоборот 
+    koeffCircle  = event.target.value;
+    h = String(koeffCircle) + '%';
+    w = String(koeffCircle) + '%';
     //запись новой ширины и высоты circle
     circle.style.width = w;
     circle.style.height= h;
